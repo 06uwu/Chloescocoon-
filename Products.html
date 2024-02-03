@@ -1,109 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Explore Chloe's Cocoon for unique and intriguing products. Discover what we may offer if there's enough interest.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | Chloe's Cocoon</title>
     <link rel="stylesheet" href="style.css">
+    <title>Home | Chloe's Cocoon</title>
 </head>
-<body>
 
-<header>
-    <h1>Welcome to the Chloe's Cocoon</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Products.html">Products</a></li>
-            <li><a href="aboutus">About Us</a></li>    
-        </ul>
-    </nav>
-</header>
-<h1>♡ This page is to show what we will sell if there's enough potential ♡</h1>
-<section id="products">
-    <h2>Our Products</h2>
-    <div class="product-item">
-        <img src="fotos/puffysleevesshort.png" alt="short dress puffy sleeves">
-        <h3>Short Romantic</h3>
-        <p>No product description yet.</p>
-        <p>Price: €55,00</p>
-        <button>Interested ♡</button>
-    </div>
-    <div class="product-item">
-        <img src="fotos/chickenlong.png" alt="Long dress feathers">
-        <h3>Long Feather</h3>
-        <p>No product description yet.</p>
-        <p>Price: €62,00</p>
-        <button>Interested ♡</button>
-    </div>
-    <div class="product-item">
-        <img src="fotos/bowdress.png" alt="Short dress with bow">
-        <h3>Short Pink Bow</h3>
-        <p>No product description yet.</p>
-        <p>Price: €52,00</p>
-        <button>Interested ♡</button>
-    </div>
-    <div class="product-item">
-        <img src="fotos/shortscarf.png" alt="Short dress with scarf">
-        <h3>Short Blue Scarf</h3>
-        <p>No product description yet.</p>
-        <p>Price: €40,00</p>
-        <button>Interested ♡</button>
-    </div>
-    <div class="product-item">
-        <img src="fotos/bluefeather.png" alt="Long dress with feathers">
-        <h3>Long Blue Feather</h3>
-        <p>No product description yet.</p>
-        <p>Price: €67,00</p>
-        <button>Interested ♡</button>
-    </div>
-    <div class="product-item">
-        <img src="fotos/bluefeather.png" alt="Long dress with feathers">
-        <h3>Long Blue Feather</h3>
-        <p>No product description yet.</p>
-        <p>Price: €67,00</p>
-        <button>Interested ♡</button>
-    </div>   
-    <div class="product-item">
-        <img src="fotos/longbow.png" alt="Long dress with bow">
-        <h3>Long Bow </h3>
-        <p>No product description yet.</p>
-        <p>Price: €67,00</p>
-        <button>Interested ♡</button>
-    </div>  
-    <div class="product-item">
-        <img src="fotos/pirate.png" alt="Graduating dress white">
-        <h3>Pirate graduating</h3>
-        <p>No product description yet.</p>
-        <p>Price: €57,00</p>
-        <button>Interested ♡</button>
-    </div>  
-    <div class="product-item">
-        <img src="fotos/shortfold.png" alt="Multi wearable">
-        <h3>Multi wearable </h3>
-        <p>No product description yet.</p>
-        <p>Price: €32,50</p>
-        <button>Interested ♡</button>
-    </div>  
-    <div class="product-item">
-        <img src="fotos/princessdress.png" alt="princess">
-        <h3>Princess </h3>
-        <p>No product description yet.</p>
-        <p>Price: €45,50</p>
-        <button>Interested ♡</button>
-    </div>  
-    <div class="product-item">
-        <img src="fotos/princessdress.png" alt="princess">
-        <h3>Princess </h3>
-        <p>No product description yet.</p>
-        <p>Price: €45,50</p>
-        <button>Interested ♡</button>
-    </div> 
+<body class="products-page">
+    <header>
+        <div class="header-inner">
+            <a href="index.html" aria-label="Back to homepage">
+                <img src="fotos/Logo.png" alt="Chloe's Cocoon Logo" class="logo">
+            </a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="Products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-</section>
+    <main>
+        <section aria-labelledby="main-heading">
+            <h1 id="main-heading">Discover Potential Products</h1>
+            <p>♡ Explore what we could offer if there's enough interest. ♡</p>
+        </section>
+        <section aria-labelledby="products-heading">
+            <h2 id="products-heading">Our Products</h2>
+            <div class="products-grid">
+                <article class="product-item">
+                    <img src="fotos/puffysleevesshort.png" alt="Short dress with puffy sleeves" class="product-image">
+                    <div class="product-info">
+                        <h3>Short Romantic</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €55,00</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Short Romantic dress">Interested
+                        ♡</button>
+                </article>
+                <article class="product-item">
+                    <img src="fotos/chickenlong.png" alt="Long dress feathers" class="product-image">
+                    <div class="product-info">
+                        <h3>Long Feather</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €62,00</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Long Feather dress">Interested
+                        ♡</button>
+                </article>
 
-<footer>
-    <p>Contact me at <a href="mailto:chloescocoon@gmail.com">chloescocoon@gmail.com</a></p>
-</footer>
+                <article class="product-item">
+                    <img src="fotos/bowdress.png" alt="Short dress with bow" class="product-image">
+                    <div class="product-info">
+                        <h3>Short Pink Bow</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €52,00</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Short Pink Bow dress">Interested
+                        ♡</button>
+                </article>
 
+                <article class="product-item">
+                    <img src="fotos/shortscarf.png" alt="Short dress with scarf" class="product-image">
+                    <div class="product-info">
+                        <h3>Short Blue Scarf</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €40,00</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Short Blue Scarf dress">Interested
+                        ♡</button>
+                </article>
+
+                <article class="product-item">
+                    <img src="fotos/bluefeather.png" alt="Long dress with feathers" class="product-image">
+                    <div class="product-info">
+                        <h3>Long Blue Feather</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €67,00</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Long Blue Feather dress">Interested
+                        ♡</button>
+                </article>
+
+                <article class="product-item">
+                    <img src="fotos/longbow.png" alt="Long dress with bow" class="product-image">
+                    <div class="product-info">
+                        <h3>Long Bow</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €67,00</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Long Bow dress">Interested
+                        ♡</button>
+                </article>
+
+                <article class="product-item">
+                    <img src="fotos/pirate.png" alt="Graduating dress white" class="product-image">
+                    <div class="product-info">
+                        <h3>Pirate Graduating</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €57,00</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Pirate Graduating dress">Interested
+                        ♡</button>
+                </article>
+
+                <article class="product-item">
+                    <img src="fotos/shortfold.png" alt="Multi wearable" class="product-image">
+                    <div class="product-info">
+                        <h3>Multi Wearable</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €32,50</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Multi Wearable dress">Interested
+                        ♡</button>
+                </article>
+
+                <article class="product-item">
+                    <img src="fotos/princessdress.png" alt="Princess dress" class="product-image">
+                    <div class="product-info">
+                        <h3>Princess</h3>
+                        <p>No product description yet.</p>
+                        <p>Price: €45,50</p>
+                    </div>
+                    <button class="interest-button" aria-label="Express interest in Princess dress">Interested
+                        ♡</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact us at <a href="mailto:chloescocoon@gmail.com">chloescocoon@gmail.com</a></p>
+        </div>
+    </footer>
 </body>
+
 </html>
