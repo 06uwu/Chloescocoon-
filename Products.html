@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="description"
-        content="Explore Chloe's Cocoon for unique and intriguing products. Discover what we may offer if there's enough interest.">
+    <meta name="description" content="Explore Chloe's Cocoon for unique and intriguing products. Discover what we may offer if there's enough interest.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Home | Chloe's Cocoon</title>
 </head>
-
 <body class="products-page">
     <header>
         <div class="header-inner">
@@ -30,11 +27,11 @@
     <main>
         <section aria-labelledby="main-heading">
             <h1 id="main-heading">Discover Potential Products</h1>
-            <p>♡ Explore what we could offer if there's enough interest. ♡</p>
+            <p>♡ Explore what we could offer if there's enough interest. I'm looking for more clothing! ♡</p>
         </section>
         <section aria-labelledby="products-heading">
-            <h2 id="products-heading">Our Products</h2>
             <div class="products-grid">
+
                 <article class="product-item">
                     <img src="fotos/puffysleevesshort.png" alt="Short dress with puffy sleeves" class="product-image">
                     <div class="product-info">
@@ -42,9 +39,9 @@
                         <p>No product description yet.</p>
                         <p>Price: €55,00</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Short Romantic dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('shortRomantic')">Interested ♡</button>
                 </article>
+
                 <article class="product-item">
                     <img src="fotos/chickenlong.png" alt="Long dress feathers" class="product-image">
                     <div class="product-info">
@@ -52,8 +49,7 @@
                         <p>No product description yet.</p>
                         <p>Price: €62,00</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Long Feather dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('longFeather')">Interested ♡</button>
                 </article>
 
                 <article class="product-item">
@@ -63,8 +59,7 @@
                         <p>No product description yet.</p>
                         <p>Price: €52,00</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Short Pink Bow dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('shortPinkBow')">Interested ♡</button>
                 </article>
 
                 <article class="product-item">
@@ -74,8 +69,7 @@
                         <p>No product description yet.</p>
                         <p>Price: €40,00</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Short Blue Scarf dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('shortBlueScarf')">Interested ♡</button>
                 </article>
 
                 <article class="product-item">
@@ -85,8 +79,7 @@
                         <p>No product description yet.</p>
                         <p>Price: €67,00</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Long Blue Feather dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('longBlueFeather')">Interested ♡</button>
                 </article>
 
                 <article class="product-item">
@@ -96,8 +89,7 @@
                         <p>No product description yet.</p>
                         <p>Price: €67,00</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Long Bow dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('longBow')">Interested ♡</button>
                 </article>
 
                 <article class="product-item">
@@ -107,8 +99,7 @@
                         <p>No product description yet.</p>
                         <p>Price: €57,00</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Pirate Graduating dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('pirateGraduating')">Interested ♡</button>
                 </article>
 
                 <article class="product-item">
@@ -118,8 +109,7 @@
                         <p>No product description yet.</p>
                         <p>Price: €32,50</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Multi Wearable dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('multiWearable')">Interested ♡</button>
                 </article>
 
                 <article class="product-item">
@@ -129,18 +119,56 @@
                         <p>No product description yet.</p>
                         <p>Price: €45,50</p>
                     </div>
-                    <button class="interest-button" aria-label="Express interest in Princess dress">Interested
-                        ♡</button>
+                    <button class="interest-button" onclick="redirectToForm('princess')">Interested ♡</button>
                 </article>
+
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>Contact us at <a href="mailto:chloescocoon@gmail.com">chloescocoon@gmail.com</a></p>
+            <p>Contact me at <a href="mailto:chloescocoon@gmail.com">chloescocoon@gmail.com</a></p>
         </div>
     </footer>
-</body>
 
+    <script>
+        function redirectToForm(product) {
+            var formUrl;
+            switch (product) {
+                case 'shortRomantic':
+                    formUrl = 'https://forms.gle/y4H8QrbcnjDZZJRs5';
+                    break;
+                case 'longFeather':
+                    formUrl = 'https://forms.gle/9Nd1HrS8U9VDFfdr6';
+                    break;
+                case 'shortPinkBow':
+                    formUrl = 'https://forms.gle/fY6iKCLxpGAKn6c28';
+                    break;
+                case 'shortBlueScarf':
+                    formUrl = 'https://forms.gle/6iPGrAFCX7TMsW4Q6';
+                    break;
+                case 'longBlueFeather':
+                    formUrl = 'https://forms.gle/BDQCoADetxfwJeYv5';
+                    break;
+                case 'longBow':
+                    formUrl = 'https://forms.gle/mswFw2n1QQ1mwxk79';
+                    break;
+                case 'pirateGraduating':
+                    formUrl = 'https://forms.gle/RhfZUreEtZREmnqd7';
+                    break;
+                case 'multiWearable':
+                    formUrl = 'https://forms.gle/Fm7eL6ga6yWWKLB99';
+                    break;
+                case 'princess':
+                    formUrl = 'https://forms.gle/gTe4y5WKR2fxM9n77';
+                    break;
+                default:
+                    alert("Invalid product. Please try again.");
+                    return;
+            }
+            window.open(formUrl, '_blank');
+        }
+    </script>
+</body>
 </html>
