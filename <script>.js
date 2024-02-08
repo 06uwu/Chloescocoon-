@@ -1,6 +1,9 @@
 function redirectToForm(product) {
     var formUrl;
     switch (product) {
+        case 'VintedAccount':
+            formUrl = 'https://www.vinted.nl/member/187110466-chloescocoon';
+            break;
         case 'shortRomantic':
             formUrl = 'https://forms.gle/y4H8QrbcnjDZZJRs5';
             break;

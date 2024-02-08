@@ -33,6 +33,14 @@
             <div class="products-grid">
 
                 <article class="product-item">
+                    <img src="fotos/me.jpg" alt="Vinted" class="product-image">
+                    <div class="product-info">
+                        <h3> ♡ My Vinted account ♡</h3>
+                    </div>
+                    <button class="interest-button" onclick="redirectToForm('VintedAccount')">VintedAccount ♡</button>
+                </article>
+
+                <article class="product-item">
                     <img src="fotos/puffysleevesshort.png" alt="Short dress with puffy sleeves" class="product-image">
                     <div class="product-info">
                         <h3>Short Romantic</h3>
@@ -136,6 +144,9 @@
         function redirectToForm(product) {
             var formUrl;
             switch (product) {
+                case 'VintedAccount':
+                    formUrl = 'https://www.vinted.nl/member/187110466-chloescocoon';
+                    break;
                 case 'shortRomantic':
                     formUrl = 'https://forms.gle/y4H8QrbcnjDZZJRs5';
                     break;
